@@ -9,6 +9,9 @@
     <button class="hamburger-menu" (click)="toggleMenu()">☰</button> 
     
     <!-- Dropdown Menu -->
+
+
+
     <div class="toolbar-links" id="mobileMenu" [class.show]="showMenu">
       <a (click)="hideMenu()" routerLink="/">{{ 'home' | translate }}</a>
       <a (click)="hideMenu()" routerLink="/estimator">{{ 'estimator' | translate }}</a> 
@@ -17,7 +20,7 @@
   </div>
   
   <div class="translation-buttons">
-    <a (click)="changeLanguage('en')">English</a>
+    <a (click)="changeLanguage('en')">English </a>
     <a (click)="changeLanguage('fr')">French</a>
   </div>
 </nav>
